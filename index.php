@@ -1,3 +1,8 @@
+<?php
+include_once "./src/php/conexao.php";
+echo password_hash("50queijos", PASSWORD_DEFAULT);
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -26,7 +31,8 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form id="login-usuario-form">
+                        <span id="msgAlertErrorLogin"></span>
                         <div class="mb-3">
                             <label for="email" class="col-form-label">Usuário</label>
                             <input type="text" name="email" class="form-control" id="email" placeholder="Digite seu e-mail">
@@ -35,11 +41,10 @@
                             <label for="senha" class="col-form-label">Senha</label>
                             <input type="password" name="senha" class="form-control" id="senha" placeholder="Digite sua senha">
                         </div>
+                        <div class="mb-3">
+                            <input type="submit" class="btn btn-outline-primary bt-sm" id="login-usuario-btn" value="Acessar">
+                        </div>
                     </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
                 </div>
             </div>
         </div>
@@ -48,6 +53,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./src/js/custom.js"></script>
 </body>
 
 </html>
