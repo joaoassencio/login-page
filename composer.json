@@ -1,0 +1,17 @@
+{
+    "name": "celke/login",
+    "description": "Projeto tutorial de página de login com PHP, Javascript e Bootstrap.",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Celke\\Login\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "João Assêncio",
+            "email": "joao.assencio123@gmail.com"
+        }
+    ],
+    "require": {}
+}
