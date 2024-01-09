@@ -1,8 +1,3 @@
-<?php
-include_once "./src/php/conexao.php";
-echo password_hash("50queijos", PASSWORD_DEFAULT);
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
